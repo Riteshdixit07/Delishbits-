@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelishBites - Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">DelishBites</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <!-- <header id="hero" class="hero">
+        <div class="container">
+            <h1>Welcome to DelishBites</h1>
+            <p>Your favorite food delivered fast at your door</p>
+            <a href="#order" class="cta-button">Order Now</a>
+        </div>
+    </header> -->
+
+    <header id="hero" class="hero">
+        <div class="container">
+            
+            <!-- Original Hero Content -->
+            <div class="hero-content">
+                <h1>Welcome to DelishBites</h1>
+                <p>Your favorite food delivered fast at your door</p>
+                <a href="#order" class="cta-button" id="orderNowButton">Order Now</a>
+            </div>
+    
+            <!-- New Content for Veg and Non-Veg Menu (Initially Hidden) -->
+            <div class="menu-content hidden">
+                <h2>Select Your Preference</h2>
+                <div class="menu-options">
+                    <div class="menu-option">
+                        <h3>Veg Menu</h3>
+                        <ul>
+                            <li>Mixed Veg Curry</li>
+                            <li>Paneer Tikka</li>
+                            <li>Veg Biryani</li>
+                        </ul>
+                    </div>
+                    <div class="menu-option">
+                        <h3>Non-Veg Menu</h3>
+                        <ul>
+                            <li>Chicken Curry</li>
+                            <li>Fish Fry</li>
+                            <li>Mutton Biryani</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#order" class="cta-button" id="goToOrderForm">Proceed to Order</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Body Section: Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <img src="images/delivery.png" alt="Quick Delivery">
+                <h3>Quick Delivery</h3>
+                <p>Get your food delivered in no time.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/chef-special.png" alt="Chef Specials">
+                <h3>Chef Specials</h3>
+                <p>Exclusive dishes prepared by top chefs.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/menu.png" alt="Menu Highlights">
+                <h3>Menu Highlights</h3>
+                <p>Explore our popular dishes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section id="order" class="order-form">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post" id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="meal">Select Meal:</label>
+                <select id="meal" name="meal" required>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+
+                <button type="submit" class="cta-button">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-about">
+                <h3>About DelishBites</h3>
+                <p>DelishBites is your go-to food delivery service, bringing the best dishes from top restaurants right to your door.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@delishbites.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
